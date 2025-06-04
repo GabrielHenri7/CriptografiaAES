@@ -1,0 +1,23 @@
+{
+  "name": "criptografiaaes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "criptografia.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielHenri7/CriptografiaAES.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielHenri7/CriptografiaAES/issues"
+  },
+  "homepage": "https://github.com/GabrielHenri7/CriptografiaAES#readme",
+  "dependencies": {
+    "crypto-js": "^4.2.0"
+  }
+}

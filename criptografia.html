@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Criptografia AES com CryptoJS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  </head>
+  <body>
+    <h2>Criptografia Simétrica com AES</h2>
+    <script>
+      const chaveSecreta = "minha-chave-super-secreta";
+      const dadoOriginal = "Nome do cliente: Gabriel Henrique";
+      const dadoCriptografado = CryptoJS.AES.encrypt(
+        dadoOriginal,
+        chaveSecreta
+      ).toString();
+      document.write(
+        "<p><strong>Dado Cifrado:</strong> " + dadoCriptografado + "</p>"
+      );
+
+      //ds
+      const bytes = CryptoJS.AES.decrypt(dadoCriptografado, chaveSecreta);
+      const dadoDecifrado = bytes.toString(CryptoJS.enc.Utf8);
+      document.write(
+        "<p><strong>Dado Decifrado:</strong> " + dadoDecifrado + "</p>"
+      );
+    </script>
+  </body>
+</html>
